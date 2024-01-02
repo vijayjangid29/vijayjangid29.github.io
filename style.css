@@ -1,0 +1,379 @@
+
+*{
+
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background:rgba(0,0, 0, 0.1);
+    scroll-behavior: smooth;
+    a{
+        text-decoration: none;
+    }
+}
+.navbar{
+    top: 0px;
+    width: 100%;
+    background: white;
+    padding-top: 10px;
+    position: fixed;
+}
+.navbr {
+    gap: 40px;
+    display: flex;
+}
+
+.navsearch {
+    gap: 0px;
+    display: flex;
+    height: 40px;
+    a{
+        text-decoration: none;
+    }
+
+}
+
+.navsearch button {
+    border: 0px solid gray;
+    border-right: 0px;
+    background-color: rgba(135,206,250,0.2);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.navsearch input {
+    background: rgba(135,206,250,0.2);
+    width: 44rem;
+    border: 0px;
+    border-left: 0px;
+    border-radius: 1px 8px 8px 1px;
+}
+
+.login {
+    display: flex;
+    margin-top: 10px;
+}
+
+.showlog {
+    position: absolute;
+    display: none;
+    top:2.9rem;
+    width: 15rem;
+
+}
+
+.login:hover  .colr{
+    border-radius: 10px;
+    background: rgba(0, 0, 200, 0.9);
+    height: 40px;
+}
+
+.login:hover .colr a,img{
+    color:white;
+}
+.login:hover .colr .rot{
+    transition-property: all;
+    transition-duration: 0.3s;
+    filter: brightness(100%) grayscale(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    filter:grayscale(10);
+    transform-style: preserve-3d;
+    transform: rotate(180deg);
+    color: white;
+}
+.colr:hover ul {
+    margin-left: -200px;
+}
+
+.login:hover .showlog {
+    box-shadow: 10px black;
+    /* border: 1px solid black; */
+    display: block;
+}
+
+ul {
+
+    display: block;
+    background: white;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    list-style: none;
+    margin-left: auto; /* Adjusted for better alignment */
+}
+
+
+.firs,.author {
+display: flex;
+    border: 0px solid;
+    margin-left: -40px;
+    padding: 2px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+.firs{
+    padding: 1rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.author{
+    border: 0px;
+}
+.author img{
+    margin-right:20px ;
+}
+.author a{
+padding-left: 10px;
+    display: flex;
+ text-decoration: none;}
+li{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+}
+.lg{
+    border: 0px;
+}
+.login .line{
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;    
+    border-radius: 0.3rem;
+}
+.crt{
+    display: flex;
+    margin-top: 0px;
+    gap: 1rem;
+    border: 0px solid;
+}
+.seller img{
+    
+    margin-top: -5px;
+}
+.seller a{ 
+    gap: 1rem;
+    display: flex;
+    margin-top: 14px;
+}
+/* Humburger */
+.hnburger ul{
+    position: absolute;
+    top: 3rem;
+    width: 250px;
+    display: none;
+    right: 0.8rem;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 4px;
+
+}
+
+.hnburger ul div{
+margin-bottom: 10px;
+}
+.hnburger:hover ul{
+    display: block;   
+}
+.hnburger img{
+margin-top: 10px;
+}
+.hnburger div img{
+    margin-top: 10px;
+}
+
+.hnburger ul div{
+margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+    img{
+        margin-right: 1rem;
+    }
+
+    /* Nav bar is End here 
+       Product Started from here
+    */
+}
+.product{
+    margin-top: 15px;
+    display: flex;
+    /* font-size: xx-large; */
+    background: white;
+     /* border: 1px solid ;  */
+    margin-left: 8px;
+    gap :5px;
+    margin-right: 8px;
+padding: 1.5rem;
+
+    padding-left: 7rem;
+    padding-right: 7rem;
+    
+}
+.item{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 170px;
+    padding: 5px 0px 5px 25px;
+    gap: 10px;
+font-size: 14px;
+    span{
+        padding-left: 5px;
+        display: inline-block;
+    }
+}
+.rot1{
+
+    width: 0.9rem;
+    height: 0.9rem;
+}
+#item3:hover .fash .rot1{
+    transition-property: all;
+ transition: ease;
+ transition-duration: 0.5s;
+    transform: rotate(180deg);
+}
+#item3:hover .list1{
+    display: block;
+}
+.list1{
+    display: flex;
+    top: 11rem;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+    width: 15rem;
+    z-index: 1000;
+    left: 19rem;
+    background: white;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.list1:hover{
+    display: block;
+}
+.hov{
+
+height: 50px;
+display: flex;
+justify-content: space-between;
+}
+
+.rot2,.rot3,.rot4,.rot5,.rot6,.rot7,.rot8,.rot9,.rot10,.rot11{
+    width: 12px;
+    height: 12px;
+    margin-right: 14px;
+    transform: rotate(270deg);
+    display: none;
+}
+.hov1:hover .rot2,.hov2:hover .rot3,.hov3:hover .rot4,.hov4:hover .rot5,.hov5:hover .rot6,.hov6:hover .rot7,.hov7:hover .rot8,.hov8:hover .rot9,.hov9:hover .rot10,.hov10:hover .rot11{
+    display: block;
+}
+.list1 .hov1:hover ~ .Menswear,.Menswear:hover{
+    display: block;
+}
+
+
+.Menswear{
+ display: block;
+ position: absolute;  
+ top: -0rem;
+ border-radius: 5px 5px 5px 5px;
+ width: 14rem;
+ display: none;
+ background: white;
+ left: 14rem; 
+ box-shadow: 3px 3px 3px 3px gray;
+}
+.Menswear,.womenethic,.mensbot{
+    height: auto;
+}
+.Menswear ul li{
+    padding: 5px;
+    display: block;
+    height: 30px;
+    color: rgba(128, 128,128);
+}
+.Menswear ul  li:hover{
+    color: rgba(0,0, 0,1 );
+    transform: scale(1.0);
+}
+                                                      /* menbot staring womenethic */
+.mensbot,.womenethic,.womenwester,.menfot,.watch{
+    display: block;
+ position: absolute;  
+ border-radius: 5px 5px 5px 5px;
+ top: 0rem;
+ width: 14rem;
+ display: none; 
+ background: white;
+ left: 14rem; 
+ box-shadow: 3px 3px 3px 3px gray;
+}
+.mensbotul ul li:hover,.womenethic ul li:hover,.womenwester ul li:hover,.menfot ul li:hover,.watch ul li:hover{
+    color: rgba(0,0, 0,1 );
+    transform: scale(1.0);
+}
+.mensbot ul li,.womenethic ul li,.womenwester ul li,.menfot ul li,.watch ul li{
+    padding: 5px;
+    display: block;
+    height: 30px;
+    color: rgba(128, 128,128);
+}
+.list1 .hov2:hover ~ .mensbot,.mensbot:hover,.list1 .hov3:hover ~ .womenethic,.womenethic:hover,.list1 .hov4:hover ~ .womenwester,.womenwester:hover,.list1 .hov5:hover ~ .menfot,.menfot:hover,.list1 .hov6:hover ~ .watch,.watch:hover{
+    display: block;
+}
+.org{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+/* 
+                      Electronic items
+*/
+.container_item{
+    width: 86%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.box1{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.box1 img{
+    padding: 20px;
+}
+.minbox1,.minbox2,.minbox3,.minbox4,.minbox5,.minbox6{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    padding-left: 20px;
+    padding-right: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width: 14.3rem;
+
+}
+.minbox1:hover img,.minbox2:hover img,.minbox3:hover img,.minbox4:hover img,.minbox5:hover img,.minbox6:hover img{
+   
+    transform: scale(1.02);
+}
+.minbox6{
+ width: 125px;
+ overflow: hidden;
+}
+.butn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30.1rem;
+    color: white;
+padding: 2px;
+    right: 17rem;
+    background-color: blue;
+}
