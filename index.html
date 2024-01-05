@@ -9,32 +9,51 @@
             background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704153600&semt=sph');
             background-repeat: no-repeat;
             background-size: cover;
-        
+            display: flex;
+            height: 800px;
+            backdrop-filter: blur(40px);
+            justify-content: center;
+            align-items: center;
+
         }
         .display{
-            position: absolute ;
-            top: 18rem;
-            left: 25rem;
-            display: flex;
+            border-radius: 20px;
+            height: 50%;
+          display: flex;
+            width: 50%;
             gap: 20px;
-
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.408);
+            backdrop-filter: blur(10px);
+        }
+        .display div input{
+            display: none;
+        }
+        .inp:hover input{
+            display: block;
         }
         
     </style>
 </head>
 <body>
     <div class="display">
-        <div>
+        <div class="inp">
             
             <a href="netflix/netflix.html"><input width="305px" type="image" src="netflix.png" alt=""></a>
-            <h1> Netflix</h1>
+            <h1 id="d1"> Netflix</h1>
         </form>
         
         </div>
-        <div>
+        <div class="inp">
             <a href="flipkart.html"> <input width="305px" type="image" src="flipkart.png" alt=""></a>
-            <h1>Flipkart</h1>
+            <h1 id="d2">Flipkart</h1>
 
+        </div>
+        <div class="inp" >
+            <a href="/Counter/index.html"> <input width="305px" type="image" src="counter.png" alt=""></a>
+            <h1 id="d3">Counter</h1>
         </div>
     </div>
 </body>
