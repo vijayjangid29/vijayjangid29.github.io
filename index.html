@@ -29,12 +29,23 @@
             backdrop-filter: blur(10px);
         }
         .display div input{
+            transition: opacity 0.3s;
             display: none;
         }
         .inp:hover input{
+            animation: fadeIn 0.3s ease 2s forwards;
             display: block;
         }
         
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
     </style>
 </head>
 <body>
@@ -54,6 +65,10 @@
         <div class="inp" >
             <a href="/Counter/index.html"> <input width="305px" type="image" src="counter.png" alt=""></a>
             <h1 id="d3">Counter</h1>
+        </div>
+        <div class="inp">
+            <a href="./popup,modal/index.html"><input width="305px" style="height: 140px; width: 305px;" src="pop.png" alt=""></a>
+            <h1 id="d4">popup</h1>
         </div>
     </div>
 </body>

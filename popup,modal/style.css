@@ -1,0 +1,89 @@
+
+#bg{
+    display: none;
+    width: 100vw;
+position: absolute;
+top: 6rem;
+left: 37rem;
+
+}
+.imgo{
+    
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 30px;
+    background-image: url("https://img.freepik.com/free-vector/colorful-icons-set-design_79603-1268.jpg?size=626&ext=jpg&ga=GA1.1.2078303310.1675183824&semt=sph");
+    width: 22.9vw;
+    background-size: cover;
+    height: 65.2vh;
+}
+.container{
+    margin-bottom: 10px;
+    border: 0.001rem solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    width: 350px;
+    border-radius: 5px;
+    height: 65vh;
+    backdrop-filter: blur(100px);
+    
+    gap: 2px;
+    flex-direction: column;
+}
+.container div{
+    display: flex;
+}
+hr+hr {
+    color:blue;
+    opacity: 1;
+    width: 80px;
+    margin-right:50px;
+    height: 0.001rem;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+hr {
+color: blue;
+    opacity: 1;
+    width: 80px;
+
+    margin-right: 40px;
+    height: 0.001rem;
+}
+.container div{
+    margin-top: 40px;
+}
+.container input{
+    height: 2.3rem;
+margin: 0px 40px;
+padding-left: 10px;
+border: 0.001rem solid rgba(128, 128, 128, 0.5);
+}
+
+.comma{
+    margin: 0px auto;
+    margin-bottom: 35px;
+}
+.container input[type=button]{
+    margin-top: 4px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(9, 10, 40, 0.9);
+   
+
+
+}
+#bck{
+    width: 30px;
+    border: 0px;
+    background: transparent;
+
+}
+input[type=text]:focus{
+    border:1px solid purple;
+}
+input{
+    border-radius: 5px;
+}
